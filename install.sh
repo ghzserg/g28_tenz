@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 CONF=/opt/config/printer.base.cfg
 
