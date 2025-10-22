@@ -1,7 +1,7 @@
 # Load cell parking
 **Load cell parking** is a method to gently and precisely "park" the print head in a safe position **using sensors that measure force**.
 
-Instead of simply stopping the head at a mechanical limit (as in standard homing), the printer **slowly lowers the nozzle until it lightly touches the bed**, detecting this contact by monitoring the change in force on the load cells. This allows you to:
+Instead of simply stopping the head at the stop (as in a normal parking situation), the printer **slowly raises the table until it lightly touches the nozzle**, recording this touch by changing the load on the load cells. This allows you to:
 
 - Precisely determine the true bed position,  
 - Avoid Z-offset issues.
