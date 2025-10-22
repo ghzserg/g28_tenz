@@ -11,7 +11,7 @@ channel: dev
 path: /root/printer_data/config/mod_data/plugins/g28_tenz
 origin: https://github.com/ghzserg/g28_tenz.git
 is_system_service: False
-primary_branch: master
+primary_branch: main
 ```
 3. Выполните команду: ```ENABLE_PLUGIN name=g28_tenz```
 

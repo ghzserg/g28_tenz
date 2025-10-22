@@ -20,7 +20,7 @@ channel: dev
 path: /root/printer_data/config/mod_data/plugins/nopoop
 origin: https://github.com/ghzserg/nopoop.git
 is_system_service: False
-primary_branch: master
+primary_branch: main
 ```
 
 - **Путь к плагину**: `/root/printer_data/config/mod_data/plugins/nopoop`
