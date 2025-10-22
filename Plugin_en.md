@@ -1,13 +1,35 @@
-# Plugins in Zmod
+# Plugins in zMod
 
-Any user can create their own plugin and integrate it into **zmod**.
+Any user can create and connect their own plugin to **zmod**.
 
-Plugin example: https://github.com/ghzserg/g28_tenz
-(Throughout the examples below, the plugin name `g28_tenz` is used — replace it with your own plugin name as needed.)
+Plugins included with zMod:
+- [g28_tenz](https://github.com/ghzserg/g28_tenz) – Z-axis parking using load cells
 
 ---
 
-## Adding a Plugin
+## Plugin Management
+
+**Enable plugin:**
+```gcode
+ENABLE_PLUGIN name=g28_tenz
+```
+— downloads the plugin and restarts Klipper on success.
+
+**Disable plugin:**
+```gcode
+DISABLE_PLUGIN name=g28_tenz
+```
+
+---
+
+## Creating Your Own Plugin
+
+Plugin example: https://github.com/ghzserg/g28_tenz
+(In all examples below, the name `g28_tenz` is used — replace it with your plugin’s name.)
+
+---
+
+### Adding a Plugin
 
 In the file
 ```mod_data/user.moonraker.conf```
@@ -24,44 +46,26 @@ primary_branch: main
 ```
 
 - **Plugin path**: `/root/printer_data/config/mod_data/plugins/g28_tenz`
-- **Source URL**: `https://github.com/ghzserg/g28_tenz.git`
+- **Source**: `https://github.com/ghzserg/g28_tenz.git`
 
-> Stable plugins may be included in the zmod distribution, but they are updated and maintained by their respective authors.
-
----
-
-## Plugin Management
-
-**Enable plugin:**
-```gcode
-ENABLE_PLUGIN name=g28_tenz
-```
-— Downloads the plugin and restarts Klipper if successful.
-
-**Disable plugin:**
-```gcode
-DISABLE_PLUGIN name=g28_tenz
-```
+> Stable plugins may be included in the zmod distribution, but are updated and maintained by their respective authors.
 
 ---
-
-## Plugin Structure
 
 ### Installation Script
 
-After calling `ENABLE_PLUGIN`, the install.sh file will be automatically executed.
+After calling `ENABLE_PLUGIN`, the file `install.sh` will be executed automatically.
+After calling `DISABLE_PLUGIN`, the file `uninstall.sh` will be executed automatically.
 
-After calling `DISABLE_PLUGIN`, the uninstall.sh file will be automatically executed.
-
-### Single-language plugin
-Must contain a file:
+### Single-language Plugin
+Must contain the file:
 ```
 g28_tenz.cfg
 ```
-All functionality resides in this file.
+All functionality goes inside this file.
 
-### Multi-language plugin
-Language-specific files are placed in subdirectories:
+### Multi-language Plugin
+Files are placed in language-specific subdirectories:
 ```
 en/g28_tenz.cfg
 ru/g28_tenz.cfg
@@ -69,14 +73,14 @@ de/g28_tenz.cfg
 ...
 ```
 
-All output messages must be escaped, for example:
+All output strings must be escaped, for example:
 ```gcode
 RESPOND PREFIX="info" MSG="===Cutting the filament==="
 ```
 
 ---
 
-#### Translations
+#### Translation
 
 Translations are stored in the `translate/` directory in files like `de.csv`:
 
@@ -86,11 +90,11 @@ Cutting the filament;Filament schneiden
 
 Format:
 ```
-English phrase;Translated phrase
+English phrase;Translation in target language
 ```
 
 To generate language files, run:
 ```bash
 ./Make.sh
 ```
-This script will create the required directories and `.cfg` files.
+The script will create the required directories and `.cfg` files.

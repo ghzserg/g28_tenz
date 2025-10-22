@@ -29,6 +29,6 @@ awk '
     next
 }
 { print }
-' /tmp/tmp > ${CONF} && rm /tmp/tmp && echo "Enable position_endstop in [stepper_z] printer.base.cfg"
+' tmp.cfg > ${CONF} && rm tmp.cfg && echo "Enable position_endstop in [stepper_z] printer.base.cfg"
 
 echo "G28_tenz uninstalled"
