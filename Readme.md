@@ -2,7 +2,7 @@
 
 To use this mod with your Flashforge AD5X/AD5M/AD5M Pro:
 
-1. Install zMod: https://github.com/ghzserg/zmod  
+1. Install zMod: https://github.com/ghzserg/zmod
 2. In the file ```mod_data/user.moonraker.conf```, add the following section:
 ```ini
 [update_manager g28_tenz]
@@ -18,8 +18,9 @@ primary_branch: main
 # Warning
 
 When homing using load cells:
-- The nozzle must be clean  
-- The bed must be empty  
-- Print recovery will not work, as the bed is not empty  
+- If the bed was at 220 degrees Z at the time of parking, there will be a blow
+- The nozzle must be clean
+- The bed must be empty
+- Print recovery will not work, as the bed is not empty
 
 Use this module at your own risk.
