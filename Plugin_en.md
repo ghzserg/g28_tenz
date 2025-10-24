@@ -4,6 +4,8 @@ Any user can create and connect their own plugin to **zmod**.
 
 Plugins included with zMod:
 - [g28_tenz](https://github.com/ghzserg/g28_tenz) – Z-axis parking using load cells
+- [bambufy](https://github.com/function3d/bambufy) - Compatible with Bambu Studio, improves prime tower management, provides accurate time/material estimates, reduces waste, supports Mainsail, fast color changes, and advanced printing features
+- [nopoop](https://github.com/ghzserg/nopoop) - Maximum waste reduction by ninjamida
 
 ---
 
