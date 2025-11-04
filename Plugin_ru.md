@@ -5,7 +5,7 @@
 Плагины включенные в поставку zMod:
 - [recommend](https://github.com/ghzserg/recommend/blob/main/Readme_ru.md) - Настройки, которые рекомендуется использовать сразу после установки мода
 - [g28_tenz](https://github.com/ghzserg/g28_tenz/blob/main/Readme_ru.md) - Парковка оси Z по тензодатчикам
-- [bambufy](https://github.com/function3d/bambufy/blob/main/Readme_ru.md) - Совместим с Bambu Studio, улучшает управление башней подачи, обеспечивает точную оценку времени и расхода материала, снижает отходы, поддерживает Mainsail, быструю смену цвета и расширенные функции печати.
+- [bambufy](https://github.com/function3d/bambufy/blob/master/README_ru.md) - Совместим с Bambu Studio, улучшает управление башней подачи, обеспечивает точную оценку времени и расхода материала, снижает отходы, поддерживает Mainsail, быструю смену цвета и расширенные функции печати.
 - [nopoop](https://github.com/ghzserg/blob/main/Readme_ru.md) - Максимальное уменьшение количества отходов от ninjamida
 
 ---
