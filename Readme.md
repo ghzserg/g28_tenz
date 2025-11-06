@@ -6,6 +6,8 @@ Instead of simply stopping the head at the stop (as in a normal parking situatio
 - Precisely determine the true bed position,  
 - Avoid Z-offset issues.
 
+Attention! It's recommended to set Z-Offset to 0.0. Then, adjust it.
+
 # Installation
 
 To use this mod with your Flashforge AD5X/AD5M/AD5M Pro:
