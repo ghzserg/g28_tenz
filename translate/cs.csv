@@ -1,2 +1,3 @@
 Moving the bed down 1 mm;Posun podložky dolů o 1 mm
 Parking by sensors. Nozzle must be clean. Bed must be empty;Parkování podle senzorů. Tryska musí být čistá. Podložka musí být prázdná
+Print recovery is disabled by the g28_tenz plugin.;Obnova tisku je zakázána pluginem g28_tenz.

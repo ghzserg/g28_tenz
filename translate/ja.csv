@@ -1,2 +1,3 @@
 Moving the bed down 1 mm;ベッドを1mm下げます
 Parking by sensors. Nozzle must be clean. Bed must be empty;センサーによるパーキング。ノズルは清潔である必要があります。ベッドは空である必要があります
+Print recovery is disabled by the g28_tenz plugin.;印刷復旧はg28_tenzプラグインによって無効になっています。

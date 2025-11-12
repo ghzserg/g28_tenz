@@ -1,2 +1,3 @@
 Moving the bed down 1 mm;Abaissement du lit de 1 mm
 Parking by sensors. Nozzle must be clean. Bed must be empty;Stationnement par capteurs. La buse doit être propre. Le lit doit être vide
+Print recovery is disabled by the g28_tenz plugin.;La reprise d'impression est désactivée par le plugin g28_tenz.

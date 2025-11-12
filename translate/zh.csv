@@ -1,2 +1,3 @@
 Moving the bed down 1 mm;将平台降低1毫米
 Parking by sensors. Nozzle must be clean. Bed must be empty;传感器归位。喷嘴必须清洁。平台必须为空
+Print recovery is disabled by the g28_tenz plugin.;打印恢复已被g28_tenz插件禁用。

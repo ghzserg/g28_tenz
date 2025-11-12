@@ -1,2 +1,3 @@
 Moving the bed down 1 mm;Сдвигаю стол ниже на 1 мм
 Parking by sensors. Nozzle must be clean. Bed must be empty;Парковка по датчикам. Сопло должно быть чистое. На столе должно быть пусто
+Print recovery is disabled by the g28_tenz plugin.;Восстановление печати отключено плагином g28_tenz.
