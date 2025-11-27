@@ -28,3 +28,21 @@ When homing using load cells:
 - Print recovery will not work, as the bed is not empty  
 
 Use this module at your own risk.
+
+# If a zstop.cfg error appears
+
+Go to `mod_data/plugins/g28_tenz` and create a file with the following contents
+
+For 5M/5MPro:
+```
+[gcode_button _zstop]
+pin: !PB15
+press_gcode:
+```
+
+For AD5X:
+```
+[gcode_button _zstop]
+pin: !PD2
+press_gcode:
+```
