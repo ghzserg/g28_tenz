@@ -1,0 +1,3 @@
+Moving the bed down 1 mm;Yatağı 1 mm aşağı hareket ettirme
+Parking by sensors. Nozzle must be clean. Bed must be empty;Sensörlere göre park etme. Püskürtme ucu temiz olmalıdır. Yatak boş olmalıdır
+Print recovery is disabled by the g28_tenz plugin.;Yazdırma kurtarma, g28_tenz eklentisi tarafından devre dışı bırakılmıştır.
