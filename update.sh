@@ -1,6 +1,7 @@
 #!/bin/sh
 
-source /opt/config/mod/.shell/0.sh
+[ -f /opt/config/mod/.shell/0.sh ] && source /opt/config/mod/.shell/0.sh
+[ -f /usr/data/zmod/zmod/.shell/0.sh ] && source /usr/data/zmod/zmod/.shell/0.sh
 
 PIN="!PB15"
 [ ${AD5X} -eq 1 ] && PIN="!PD2"
